@@ -1,0 +1,24 @@
+ Run the Microservice
+Start the application:
+
+bash
+Copy
+Edit
+mvn spring-boot:run
+Use the API:
+
+Run Tests:
+bash
+Copy
+Edit
+curl -X POST "http://localhost:8080/api/tests/run?browser=chrome"
+Generate Report:
+bash
+Copy
+Edit
+curl -X POST "http://localhost:8080/api/reports/generate"
+Get Report Link:
+bash
+Copy
+Edit
+curl -X GET "http://localhost:8080/api/reports"
